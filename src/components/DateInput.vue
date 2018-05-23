@@ -23,7 +23,8 @@
       @click="showCalendar"
       @keydown="allowTyping"
       @keyup="parseTypedDate"
-      @blur="inputBlurred">
+      @blur="inputBlurred"  
+      readonly="readonly">
     <!-- Clear Button -->
     <span v-if="clearButton && selectedDate" class="vdp-datepicker__clear-button" :class="{'input-group-addon' : bootstrapStyling}" @click="clearDate()">
       <i :class="clearButtonIcon">
